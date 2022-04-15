@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Productos Conito</title>
     <link rel="stylesheet" href="./css/index.css"/>
+    <!-- <link rel="stylesheet" href="./css/header.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -48,8 +49,30 @@
             </div>
         </nav>
     </header>
-    <main>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hUwmxWpOrx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <main class="main">
+        <article class="profile">
+            <div class="profile__container">
+                <div class="profile__info">
+                    <h2 class="profile__info-title">Javier Ramos</h2>
+                    <h1 class="profile__info-subtitle">Corredor, administrador y estudiante de desarrollo</h1>
+                    <p class="profile__info-description">Corredor desde 2013, egresado de ingenieria mecatronica de la PUCP y administrador de PRoductos Conito</p>
+                    <div class="profile__info-link-container">
+                        <a href="#" class="profile__info-link">CV</a>
+                        <a href="#" class="profile__info-link profile__info-link--active">Proyecto</a>
+                    </div>
+                </div>
+                <div class="profile__figure">
+                    <figure class="profile__figure-image-container">
+                        <img src="./img/impfistslogo.png" alt="Imperial Fist" class="profile__figure-image">
+                        <img src="./img/html.png" alt="html" class="profile__figure-tech-one">
+                        <img src="./img/css.png" alt="css" class="profile__figure-tech-two">
+                        <img src="./img/js.png" alt="js" class="profile__figure-tech-three">
+                        <img src="./img/react.png" alt="react" class="profile__figure-tech-four">
+                    </figure>
+                </div>
+            </div>
+        </article>
     </main>
 </body>
 </html>
