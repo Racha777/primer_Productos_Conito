@@ -36,6 +36,7 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .profile__container {
@@ -170,4 +171,38 @@
     transform: translate(-50%,-50%);
     animation: tech-jump 1s ease-in-out -0.25s infinite alternate;
     pointer-events: none;
+}
+
+@media (min-width:854px){
+
+    .profile__container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .profile__info {
+        padding: 2em;
+        text-align: start;
+        height: fit-content;
+    }
+
+    .profile__info-title {
+        font-size: 1.25rem;
+    }
+    
+    .profile__info-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .profile__info-description {
+        display: flex;
+        margin: 0;
+    }
+
+    .profile__info-link-container {
+        justify-content: flex-start;
+    }
+
+    .profile__figure-image-container{
+        max-width: 360px;
+    }
 }
