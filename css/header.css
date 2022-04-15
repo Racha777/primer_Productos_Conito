@@ -121,7 +121,7 @@
     left: 0;
     width: 0;
     height: 0.0625rem;
-    background-color: var(--secondary-highlight);
+    background-color: var(--secondary-highlight-color);
     transition: var(--all-transitions);
 }
 
