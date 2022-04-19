@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.wave-separator--r-180deg{
+    transform: rotate(180deg);
+}
+
 .wave-separator-container{
     display: flex;
     margin: 0;
