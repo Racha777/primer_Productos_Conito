@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./profile.css);
+@import url(./wave.css);
 
 :root{
     scroll-behavior: smooth;
@@ -28,7 +29,10 @@
     margin: 0;
 }
 
-
+.main{
+    width: 100%;
+    min-height: 200vh;
+}
 
 @media (min-width:854px){
     :root{

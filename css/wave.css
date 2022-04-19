@@ -1,0 +1,11 @@
+.wave-separator{
+    width: 100%;
+}
+
+.wave-separator-container{
+    display: flex;
+    margin: 0;
+}
+.wave-separator__wave{
+    width: 100%;
+}
