@@ -209,6 +209,93 @@
                 </ul>
             </div>
         </section>
+
+        <section class="wave-separator">
+            <figure class="wave-separator-container">
+                <img src="./img/wave.svg" alt="Wave de separacion" class="wave-separator__wave"/>
+            </figure>
+        </section>
+
+        <style>
+            .gallery{
+                background-color: var(--secondary-theme-color);
+                padding: var(--padding-section);
+            }
+
+            .gallery__container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                max-width: var(--max-width-container);
+                margin: auto;
+                padding: var(--padding-container);
+            }
+
+            .gallery__title{
+                font-size: 2rem;
+                text-shadow: 0 0 0.25rem var(--primary-highlight);
+                margin: 0;
+            }
+
+            .gallery__projects{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0;
+                grid-template-areas: 
+                    "uno uno tres tres tres"
+                    "uno uno dos dos cuatro"
+                    "cinco cinco dos dos seis";
+                width: 100%;
+                margin: 0;
+            }
+            
+            .gallery__project{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .gallery__project--one{
+                grid-area: uno;
+            }
+
+            .gallery__project--two{
+                grid-area: dos;
+            }
+
+            .gallery__project--three{
+                grid-area: tres;
+            }
+
+            .gallery__project--four{
+                grid-area: cuatro;
+            }
+
+            .gallery__project--five{
+                grid-area: cinco;
+            }
+
+            .gallery__project--six{
+                grid-area: seis;
+            }
+
+        </style>
+
+        <section class="gallery">
+            <div class="gallery__container">
+              <h2 class="gallery__title">🖼 Gallería 🖼</h2>
+              <figure class="gallery__projects">
+                <img src="https://i.postimg.cc/SQWSWWKp/task-manager-context-react.png" alt="task-manager-context-react" class="gallery__project gallery__project--one" />
+                <img src="https://i.postimg.cc/yYRyCSF4/lp-moonlight-parallax-js.png" alt="lp-moonlight-parallax" class="gallery__project gallery__project--two" />
+                <img src="https://i.postimg.cc/3JhYs1xQ/veterinaria-jp-r.png" alt="veterinaria-jp-r" class="gallery__project gallery__project--three" />
+                <img src="https://i.postimg.cc/8C7Gr4hq/cryptocurrency-quote-api-jp-r.png" alt="cryptocurrency-quote-api-jp-r" class="gallery__project gallery__project--four" />
+                <img src="https://i.postimg.cc/j5CXkn6d/landing-page-register-event-c.png" alt="https://i.postimg.cc/j5CXkn6d/landing-page-register-event-c.png" class="gallery__project gallery__project--five" />
+                <img src="https://i.postimg.cc/pybf7v6Y/buscador-de-imagenes-api-jp-r.png" alt="buscador-de-imagenes-api-jp-r" class="gallery__project gallery__project--six" />
+              </figure>
+            </div>
+          </section>
     </main>
 </body>
 </html>
